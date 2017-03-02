@@ -11,17 +11,58 @@ nav {
   height: 7em;
 }
 
+.navbar-toggle {
+  height: 5em;
+  width: 5em;
+}
+
+.icon-bar {
+  width: 3.3em !important;
+}
+
+.spacing {
+  padding: .4em;
+}
+
+#bs-example-navbar-collapse-1{
+  height: 15em;
+  background-color: white;
+}
+
 @media only screen
   and (min-device-width: 300px)
   and (max-device-width: 500px) {
     body {
       background-color: lightblue;
     }
+
     nav {
       height: 10em;
     }
+
     #logo {
       height: 5em;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-toggle{
+      height: 7em;
+      width: 7em;
+    }
+
+    .icon-bar {
+      width: 5em !important;
     }
 }
 
