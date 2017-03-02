@@ -1,70 +1,169 @@
 $badass: #bada55;
 $coolstuff: red;
+$leaselabs: #00A6DE;
 
 body {
   margin: 0;
-  color: $coolstuff;
-  background-color: red;
+  background-color: white;
+}
+
+#logo {
+  margin-left: 1em;
 }
 
 nav {
   height: 7em;
+  position: static;
+  z-index: 1000;
 }
 
 .navbar-toggle {
-  height: 5em;
-  width: 5em;
+  margin-top: 2em;
+  margin-right:2em;
+  height: 3em;
+  width: 3em;
 }
 
 .icon-bar {
-  width: 3.3em !important;
+  width: 1.4em !important;
 }
 
 .spacing {
-  padding: .4em;
+  padding: .2em;
 }
 
-#bs-example-navbar-collapse-1{
+#bs-example-navbar-collapse-1 {
   height: 15em;
-  background-color: white;
-}
-
-@media only screen
-  and (max-width: 500px) {
-    body {
-      background-color: lightblue;
-    }
-
-    nav {
-      height: 10em;
-    }
-
-    #logo {
-      height: 5em;
-    }
-
-    // .navbar-header {
-    //     float: none;
-    // }
-    //
-    // .navbar-toggle {
-    //     display: block;
-    // }
-    //
-    // .navbar-collapse.collapse {
-    //     display: none !important;
-    // }
-
-    .navbar-toggle{
-      height: 7em;
-      width: 7em;
-    }
-
-    .icon-bar {
-      width: 5em !important;
-    }
+  // background-color: white;
+  margin-top: .5em;
 }
 
 .navlink {
   height: 6em;
+}
+
+.navbar-item {
+  width: 8em;
+  margin-left: 2em;
+  margin-top: 1.2em;
+  margin-right: 1.5em;
+  background-color: $leaselabs;
+  border-radius: .2em;
+  font-size: .8em;
+  text-align: center;
+}
+
+#nav-container {
+  border: none;
+}
+
+// for custom navbar collapsing
+@media (max-width: 900px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display:block !important;
+        height: 25em !important;
+    }
+
+    .navbar-item {
+  //change items if needed
+    }
+
+    #bs-example-navbar-collapse-1 {
+      height: 15em;
+      background-color: white;
+      margin-top: .5em;
+      z-index: 30 !important;
+    }
+}
+
+#main-section{
+  z-index: -30;
+  margin: .8em;
+}
+
+#main-body {
+  border: 1px solid #e7e7e7;
+  border-radius: .3em;
+  height: 40em;
+  h1 {
+    color: $leaselabs;
+  }
+  h3 {
+    padding-left: 1em;
+    margin-top: -.5em;
+  }
+}
+
+.subnav-header {
+  background-color: #e7e7e7;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .9em;
+  border-radius: .4em;
+  margin-left: -3em;
+}
+
+.subnav-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subnav-link {
+  margin-left: -1.5em;
+  text-indent: -.7em;
+}
+
+.subnav-link::before {
+  content: "• ";
+  color: $leaselabs
+}
+
+.img-container {
+  width: 13em;
+  height: 10em;
+  background-color: $leaselabs;
+  margin-right: 1em;
+  margin-top: 4em;
+  float: right;
 }

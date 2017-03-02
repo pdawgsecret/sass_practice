@@ -19,33 +19,84 @@
     <link rel="stylesheet" href="public/css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar custom-bar"></span>
-            <div class="spacing"></div>
-            <span class="icon-bar"></span>
-            <div class="spacing"></div>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img id="logo" src="imgs/leaselabs_logo.png"/></a>
-        </div>
+    <div class="row">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right navlink">
-            <li class="active"><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid" id="nav-container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar custom-bar"></span>
+              <div class="spacing"></div>
+              <span class="icon-bar"></span>
+              <div class="spacing"></div>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img id="logo" src="img/leaselabs_logo.png"/></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navlink">
+              <li class="navbar-item" id="home"><a href="#">Home</a></li>
+              <li class="navbar-item" id="our-work"><a href="#">Our Work</a></li>
+              <li class="navbar-item" id="about"><a href="#">About Us</a></li>
+              <li class="active navbar-item" id="contact"><a href="#">Contact Us</a></li>
+              <li class="navbar-item" id="specials"><a href="#">Specials</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row" id="main-section">
+      <div class="col-sm-3" id="subnav">
+        <ul class="subnav-list">
+          <p class="subnav-header">Subnav</p>
+          <li class="subnav-link">Link 1</li>
+          <li class="subnav-link">Link 2</li>
+          <li class="subnav-link">Link 3</li>
+        </ul>
+        <ul class="subnav-list">
+          <p class="subnav-header">Related Links</p>
+          <li class="subnav-link">Link 1</li>
+          <li class="subnav-link">Link 2</li>
+          <li class="subnav-link">Link 3</li>
+        </ul>
+      </div>
+      <div class="col-sm-9" id="main-body">
+        <h1>HEADING 1</h1>
+        <h3><em>heading 2</em></h3>
+        <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada aliquet auctor. Vivamus dictum purus quam, imperdiet venenatis libero varius in. Praesent condimentum finibus mi, sit amet volutpat ex fermentum at.</p>
+        <br/>
+        <p> Sed nec hendrerit leo, ut lacinia tellus. Morbi leo odio, blandit ac dignissim sit amet, feugiat et ex. Sed facilisis varius magna, ac scelerisque est efficitur sed.</p>
+        <br/>
+        <p>Sed ac odio a eros fermentum convallis a nec diam. Suspendisse ac tortor a nulla placerat faucibus vitae nec ante. Nullam aliquet ullamcorper metus a gravida. Phasellus at consequat ligula. Praesent condimentum finibus mi, sit amet volutpat ex fermentum at.</p>
+        <div class="img-container">
+        </div>
+        <div class="img-container">
+        </div>
+        <div class="img-container">
+        </div>
+      <!-- </div>
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3">
+        <div class="img-container">
         </div>
       </div>
-    </nav>
-    <p>testing</p>
+      <div class="col-sm-3">
+        <div class="img-container">
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="img-container">
+        </div>
+      </div>
+      <div class="row">
+
+      </div> -->
+    </div>
   </body>
 </html>
