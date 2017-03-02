@@ -1,0 +1,30 @@
+$badass: #bada55;
+$coolstuff: red;
+
+body {
+  margin: 0;
+  color: $coolstuff;
+  background-color: red;
+}
+
+nav {
+  height: 7em;
+}
+
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+    nav {
+      height: 10em;
+    }
+    #logo {
+      height: 5em;
+    }
+}
+
+.navlink {
+  height: 6em;
+}
