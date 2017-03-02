@@ -17,5 +17,7 @@ var images = {
 };
 
 $(document).ready(function() {
+  $('#man-img').prepend('<img class="img-responsive" src="img/man.jpg" />')
 
 });
+ // id="theImg"
