@@ -138,3 +138,9 @@ a.plain-link:visited {
 
 .img-container:hover {
   opacity: 0.3; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+  background-image: linear-gradient(to bottom, #00A6DE 0, #00A6DE 100%); }
+
+.navbar-default .navbar-nav > .active > .nav-link {
+  color: white !important; }

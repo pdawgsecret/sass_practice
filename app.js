@@ -25,16 +25,49 @@ $(document).ready(function() {
 
   var wizardImg = $('<img id="wizard-img">');
   wizardImg.attr('src', images.wizard.path);
-  wizardImg.attr('class', "img-responsive")
+  wizardImg.attr('class', "img-responsive");
   wizardImg.appendTo('#wizard');
 
   var beastImg = $('<img id="beast-img">');
   beastImg.attr('src', images.beast.path);
-  beastImg.attr('class', "img-responsive")
+  beastImg.attr('class', "img-responsive");
   beastImg.appendTo('#beast');
 
-  $('#home').click(function() {
-    $($(this).attr('li')).addClass('active');
-  });
+  var beastHeading = $('<h2 id="beast-heading"></h2>');
+  $(beastHeading).append(images.beast.heading);
+
+  $("#beast").hover(function() {
+    $(this).append($(beastHeading));
+  }, function() {
+    $(this).find( "span:last" ).remove();
+  }
+);
+
+// var thisObj = {
+//   man: {
+// 		heading: 'Man Image',
+// 		description: 'Image of a man.',
+// 		path: 'http://lorempixel.com/400/200'
+// 	},
+// 	wizard: {
+// 		heading: 'Wizard Image',
+// 		description: 'Image of a wizard.',
+// 		path: 'http://lorempixel.com/400/200'
+// 	},
+// 	beast: {
+// 		heading: 'Beast Image',
+// 		description: 'Image of a beast.',
+// 		path: 'http://lorempixel.com/400/200/sports'
+// 	}
+// }
+
+// var elements = Object.keys(images).map(function(item) {
+//   var objHere = images[item];
+//   return(
+//     "<div class='col-sm-4 img-container'>" + "<img class='img-responsive' src='" + objHere.path + "'</div>"
+//   )
+// });
+
+$("div#img-row").html(elements);
 
 });

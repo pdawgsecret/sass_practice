@@ -37,12 +37,12 @@
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right navlink">
-              <li class="navbar-item custom" id="home"><a href="#">Home</a></li>
-              <li class="navbar-item custom" id="our-work"><a href="#">Our Work</a></li>
-              <li class="navbar-item custom" id="about"><a href="#">About Us</a></li>
-              <li class="navbar-item custom" id="contact"><a href="#">Contact Us</a></li>
-              <li class="navbar-item custom" id="specials"><a href="#">Specials</a></li>
+            <ul class="nav navbar-nav navbar-right navlink nav-pills">
+              <li class="navbar-item nav-item active" id="home"><a class="nav-link" data-target="#home" data-toggle="pill" href="#">Home</a></li>
+              <li class="navbar-item nav-item" id="our-work"><a class="nav-link" data-target="#our-work" data-toggle="pill" href="#">Our Work</a></li>
+              <li class="navbar-item nav-item" id="about"><a class="nav-link" data-target="#about" data-toggle="pill" href="#">About Us</a></li>
+              <li class="navbar-item nav-item" id="contact"><a class="nav-link" data-target="#contact" data-toggle="pill" href="#">Contact Us</a></li>
+              <li class="navbar-item nav-item" id="specials"><a class="nav-link" data-target="#specials" data-toggle="pill" href="#">Specials</a></li>
             </ul>
           </div>
         </div>
@@ -73,16 +73,16 @@
         <br/>
         <p>Sed ac odio a eros fermentum convallis a nec diam. Suspendisse ac tortor a nulla placerat faucibus vitae nec ante. Nullam aliquet ullamcorper metus a gravida. Phasellus at consequat ligula. Praesent condimentum finibus mi, sit amet volutpat ex fermentum at.</p>
 
-        <div class="row">
-          <div class="col-sm-4">
+        <div class="row" id="img-row">
+          <div class="col-sm-4" id="man-overlay">
             <div class="img-container" id="man">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" id="wizard-overlay">
             <div class="img-container" id="wizard">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" id="beast-overlay">
             <div class="img-container" id="beast">
             </div>
           </div>
