@@ -42,13 +42,17 @@ nav {
 
 .navbar-item {
   width: 8em;
-  margin-left: 2em;
+  margin-left: 1.5em;
   margin-top: 1.2em;
-  margin-right: 1.5em;
-  background-color: $leaselabs;
+  margin-right: 1em;
+  // background-color: $leaselabs;
   border-radius: .2em;
-  font-size: .8em;
+  font-size: 1em;
   text-align: center;
+}
+
+a:hover {
+    color: $leaselabs !important;
 }
 
 #nav-container {
@@ -56,7 +60,7 @@ nav {
 }
 
 // for custom navbar collapsing
-@media (max-width: 900px) {
+@media (max-width: 990px) {
     .navbar-header {
         float: none;
     }
@@ -154,12 +158,76 @@ nav {
 
 .subnav-link::before {
   content: "• ";
-  color: $leaselabs
+  color: $leaselabs;
 }
 
 .img-container {
   height: 10em;
-  background-color: $leaselabs;
   margin-top: 4em;
   margin-bottom: 1em;
+  max-height: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  border: .1em solid $leaselabs;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  z-index: 10000;
 }
+
+a.plain-link:link {
+  color: #777;
+  text-decoration: none;
+}
+
+a.plain-link:active {
+  color: #777;
+  text-decoration: none;
+}
+
+a.plain-link:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+// .image {
+//   opacity: 1;
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   transition: .5s ease;
+//   backface-visibility: hidden;
+// }
+
+// .middle {
+//   transition: .5s ease;
+//   opacity: 0;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%)
+// }
+
+.img-container:hover {
+  opacity: 0.3;
+  background-color: $leaselabs;
+  z-index: 10000;
+}
+
+img {
+  z-index: -1000 !important;
+}
+
+// div:hover:after {
+//     content:"\A";
+//     width:100%;
+//     height:100%;
+//     background:rgba(255, 0, 0, 0.5);
+//     position:absolute;
+//     top:0;
+//     left:0;
+// }
+
+// .container:hover .middle {
+//   opacity: 1;
+// }

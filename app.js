@@ -17,7 +17,20 @@ var images = {
 };
 
 $(document).ready(function() {
-  $('#man-img').prepend('<img class="img-responsive" src="img/man.jpg" />')
+
+  var manImg = $('<img id="man-img">');
+  manImg.attr('src', images.man.path);
+  manImg.attr('class', "img-responsive")
+  manImg.appendTo('#man');
+
+  var wizardImg = $('<img id="wizard-img">');
+  wizardImg.attr('src', images.wizard.path);
+  wizardImg.attr('class', "img-responsive")
+  wizardImg.appendTo('#wizard');
+
+  var beastImg = $('<img id="beast-img">');
+  beastImg.attr('src', images.beast.path);
+  beastImg.attr('class', "img-responsive")
+  beastImg.appendTo('#beast');
 
 });
- // id="theImg"
