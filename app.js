@@ -33,4 +33,8 @@ $(document).ready(function() {
   beastImg.attr('class', "img-responsive")
   beastImg.appendTo('#beast');
 
+  $('#home').click(function() {
+    $($(this).attr('li')).addClass('active');
+  });
+
 });

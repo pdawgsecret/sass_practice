@@ -137,9 +137,4 @@ a.plain-link:visited {
   text-decoration: none; }
 
 .img-container:hover {
-  opacity: 0.3;
-  background-color: #00A6DE;
-  z-index: 10000; }
-
-img {
-  z-index: -1000 !important; }
+  opacity: 0.3; }
